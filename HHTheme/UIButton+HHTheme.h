@@ -11,6 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIButton (HHTheme)
 
+//write only
 - (void)theme_setTitleColors:(NSArray<UIColor *> *)colors forState:(UIControlState)state;
 - (void)theme_setImageNames:(NSArray<NSString *> *)imageNames forState:(UIControlState)state;
 - (void)theme_setImages:(NSArray<UIImage *> *)images forState:(UIControlState)state;

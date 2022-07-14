@@ -88,6 +88,7 @@
 - (void)storeThemeModel:(HHThemeModel *)themeModel {
     [self invokeThemeModel:themeModel];
     [self addThemeModelIfNeeded:themeModel];
+    [self clearThemeModelIfNeeded:themeModel];
 }
 
 - (void)addThemeModelIfNeeded:(HHThemeModel *)themeModel {
@@ -102,6 +103,14 @@
     }
     [arrayM addObject:themeModel];
     [self.themeDictionaryM setObject:arrayM forKey:objectKey];
+}
+
+- (void)clearThemeModelIfNeeded:(HHThemeModel *)themeModel {
+    id themeObject = themeModel.themeObject;
+    if (themeObject == nil) {
+        return;
+    }
+    NSString *objectKey = mThemeObjectAddress(themeObject);
     [themeObject theme_afterDeallocCallBack:^{
         [self removeThemeModelsWithObjectKey:objectKey];
     }];

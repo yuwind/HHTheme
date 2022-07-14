@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CALayer (HHTheme)
 
+//write only
 @property (nonatomic, copy) NSArray<UIColor *> *theme_backgroundColors;
 
 @end

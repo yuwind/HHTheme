@@ -11,6 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIImageView (HHTheme)
 
+//write only
 @property (nonatomic, copy) NSArray<UIImage *> *theme_images;
 @property (nonatomic, copy) NSArray<NSString *> *theme_imageNames;
 
