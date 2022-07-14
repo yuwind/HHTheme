@@ -1,0 +1,19 @@
+//
+//  CALayer+HHTheme.h
+//  HHThemeDemo
+//
+//  Created by huxuewei on 2022/7/14.
+//
+
+#import <QuartzCore/QuartzCore.h>
+#import <UIKit/UIKit.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
+@interface CALayer (HHTheme)
+
+@property (nonatomic, copy) NSArray<UIColor *> *theme_backgroundColors;
+
+@end
+
+NS_ASSUME_NONNULL_END
