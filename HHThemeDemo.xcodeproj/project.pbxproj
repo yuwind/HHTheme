@@ -7,31 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FE0678FF288014200041E6F5 /* UIButton+HHTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0678FE288014200041E6F5 /* UIButton+HHTheme.m */; };
-		FE0679022880142A0041E6F5 /* UIImageView+HHTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0679012880142A0041E6F5 /* UIImageView+HHTheme.m */; };
-		FE067905288014380041E6F5 /* CALayer+HHTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = FE067904288014380041E6F5 /* CALayer+HHTheme.m */; };
+		FE06791E288103EA0041E6F5 /* UILabel+HHTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = FE067907288103EA0041E6F5 /* UILabel+HHTheme.m */; };
+		FE06791F288103EA0041E6F5 /* CALayer+HHTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = FE067908288103EA0041E6F5 /* CALayer+HHTheme.m */; };
+		FE067920288103EA0041E6F5 /* UIImageView+HHTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = FE067909288103EA0041E6F5 /* UIImageView+HHTheme.m */; };
+		FE067921288103EA0041E6F5 /* HHThemeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FE06790B288103EA0041E6F5 /* HHThemeModel.m */; };
+		FE067922288103EA0041E6F5 /* HHThemeDeallocObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FE06790D288103EA0041E6F5 /* HHThemeDeallocObject.m */; };
+		FE067923288103EA0041E6F5 /* HHThemeObserverView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE06790E288103EA0041E6F5 /* HHThemeObserverView.m */; };
+		FE067924288103EA0041E6F5 /* HHThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FE06790F288103EA0041E6F5 /* HHThemeManager.m */; };
+		FE067925288103EA0041E6F5 /* UIButton+HHTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = FE067912288103EA0041E6F5 /* UIButton+HHTheme.m */; };
+		FE067926288103EA0041E6F5 /* NSObject+HHTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = FE06791B288103EA0041E6F5 /* NSObject+HHTheme.m */; };
+		FE067927288103EA0041E6F5 /* UIView+HHTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = FE06791C288103EA0041E6F5 /* UIView+HHTheme.m */; };
 		FEF02487287FF84B008C9CA4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF02486287FF84B008C9CA4 /* AppDelegate.m */; };
 		FEF0248D287FF84B008C9CA4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF0248C287FF84B008C9CA4 /* ViewController.m */; };
 		FEF02490287FF84B008C9CA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEF0248E287FF84B008C9CA4 /* Main.storyboard */; };
 		FEF02492287FF84D008C9CA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEF02491287FF84D008C9CA4 /* Assets.xcassets */; };
 		FEF02495287FF84D008C9CA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEF02493287FF84D008C9CA4 /* LaunchScreen.storyboard */; };
 		FEF02498287FF84D008C9CA4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF02497287FF84D008C9CA4 /* main.m */; };
-		FEF024A8287FF8F5008C9CA4 /* HHThemeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF0249F287FF8F5008C9CA4 /* HHThemeModel.m */; };
-		FEF024A9287FF8F5008C9CA4 /* HHThemeObserverView.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF024A1287FF8F5008C9CA4 /* HHThemeObserverView.m */; };
-		FEF024AA287FF8F5008C9CA4 /* HHThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF024A2287FF8F5008C9CA4 /* HHThemeManager.m */; };
-		FEF024AB287FF8F5008C9CA4 /* UIView+HHTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF024A6287FF8F5008C9CA4 /* UIView+HHTheme.m */; };
-		FEF024B1287FFAC4008C9CA4 /* NSObject+HHTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF024AD287FFAC3008C9CA4 /* NSObject+HHTheme.m */; };
-		FEF024B2287FFAC4008C9CA4 /* HHThemeDeallocObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF024AE287FFAC3008C9CA4 /* HHThemeDeallocObject.m */; };
-		FEF024B5287FFAE3008C9CA4 /* UILabel+HHTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF024B4287FFAE3008C9CA4 /* UILabel+HHTheme.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FE0678FD288014200041E6F5 /* UIButton+HHTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+HHTheme.h"; sourceTree = "<group>"; };
-		FE0678FE288014200041E6F5 /* UIButton+HHTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+HHTheme.m"; sourceTree = "<group>"; };
-		FE0679002880142A0041E6F5 /* UIImageView+HHTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+HHTheme.h"; sourceTree = "<group>"; };
-		FE0679012880142A0041E6F5 /* UIImageView+HHTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+HHTheme.m"; sourceTree = "<group>"; };
-		FE067903288014380041E6F5 /* CALayer+HHTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CALayer+HHTheme.h"; sourceTree = "<group>"; };
-		FE067904288014380041E6F5 /* CALayer+HHTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CALayer+HHTheme.m"; sourceTree = "<group>"; };
+		FE067907288103EA0041E6F5 /* UILabel+HHTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+HHTheme.m"; sourceTree = "<group>"; };
+		FE067908288103EA0041E6F5 /* CALayer+HHTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+HHTheme.m"; sourceTree = "<group>"; };
+		FE067909288103EA0041E6F5 /* UIImageView+HHTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+HHTheme.m"; sourceTree = "<group>"; };
+		FE06790A288103EA0041E6F5 /* UIButton+HHTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+HHTheme.h"; sourceTree = "<group>"; };
+		FE06790B288103EA0041E6F5 /* HHThemeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHThemeModel.m; sourceTree = "<group>"; };
+		FE06790C288103EA0041E6F5 /* HHThemeConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHThemeConstant.h; sourceTree = "<group>"; };
+		FE06790D288103EA0041E6F5 /* HHThemeDeallocObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHThemeDeallocObject.m; sourceTree = "<group>"; };
+		FE06790E288103EA0041E6F5 /* HHThemeObserverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHThemeObserverView.m; sourceTree = "<group>"; };
+		FE06790F288103EA0041E6F5 /* HHThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHThemeManager.m; sourceTree = "<group>"; };
+		FE067910288103EA0041E6F5 /* UIView+HHTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HHTheme.h"; sourceTree = "<group>"; };
+		FE067911288103EA0041E6F5 /* NSObject+HHTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+HHTheme.h"; sourceTree = "<group>"; };
+		FE067912288103EA0041E6F5 /* UIButton+HHTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+HHTheme.m"; sourceTree = "<group>"; };
+		FE067913288103EA0041E6F5 /* UIImageView+HHTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+HHTheme.h"; sourceTree = "<group>"; };
+		FE067914288103EA0041E6F5 /* CALayer+HHTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+HHTheme.h"; sourceTree = "<group>"; };
+		FE067915288103EA0041E6F5 /* UILabel+HHTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+HHTheme.h"; sourceTree = "<group>"; };
+		FE067916288103EA0041E6F5 /* HHThemeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHThemeModel.h; sourceTree = "<group>"; };
+		FE067917288103EA0041E6F5 /* HHThemeObserverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHThemeObserverView.h; sourceTree = "<group>"; };
+		FE067918288103EA0041E6F5 /* HHThemePrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHThemePrivate.h; sourceTree = "<group>"; };
+		FE067919288103EA0041E6F5 /* HHThemeDeallocObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHThemeDeallocObject.h; sourceTree = "<group>"; };
+		FE06791A288103EA0041E6F5 /* HHTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHTheme.h; sourceTree = "<group>"; };
+		FE06791B288103EA0041E6F5 /* NSObject+HHTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HHTheme.m"; sourceTree = "<group>"; };
+		FE06791C288103EA0041E6F5 /* UIView+HHTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HHTheme.m"; sourceTree = "<group>"; };
+		FE06791D288103EA0041E6F5 /* HHThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHThemeManager.h; sourceTree = "<group>"; };
 		FEF02482287FF84B008C9CA4 /* HHThemeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HHThemeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEF02485287FF84B008C9CA4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FEF02486287FF84B008C9CA4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -42,23 +59,6 @@
 		FEF02494287FF84D008C9CA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FEF02496287FF84D008C9CA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FEF02497287FF84D008C9CA4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FEF0249F287FF8F5008C9CA4 /* HHThemeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHThemeModel.m; sourceTree = "<group>"; };
-		FEF024A0287FF8F5008C9CA4 /* HHThemeConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHThemeConstant.h; sourceTree = "<group>"; };
-		FEF024A1287FF8F5008C9CA4 /* HHThemeObserverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHThemeObserverView.m; sourceTree = "<group>"; };
-		FEF024A2287FF8F5008C9CA4 /* HHThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHThemeManager.m; sourceTree = "<group>"; };
-		FEF024A3287FF8F5008C9CA4 /* UIView+HHTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HHTheme.h"; sourceTree = "<group>"; };
-		FEF024A4287FF8F5008C9CA4 /* HHThemeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHThemeModel.h; sourceTree = "<group>"; };
-		FEF024A5287FF8F5008C9CA4 /* HHThemeObserverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHThemeObserverView.h; sourceTree = "<group>"; };
-		FEF024A6287FF8F5008C9CA4 /* UIView+HHTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HHTheme.m"; sourceTree = "<group>"; };
-		FEF024A7287FF8F5008C9CA4 /* HHThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHThemeManager.h; sourceTree = "<group>"; };
-		FEF024AC287FF92F008C9CA4 /* HHTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHTheme.h; sourceTree = "<group>"; };
-		FEF024AD287FFAC3008C9CA4 /* NSObject+HHTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HHTheme.m"; sourceTree = "<group>"; };
-		FEF024AE287FFAC3008C9CA4 /* HHThemeDeallocObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHThemeDeallocObject.m; sourceTree = "<group>"; };
-		FEF024AF287FFAC3008C9CA4 /* HHThemeDeallocObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHThemeDeallocObject.h; sourceTree = "<group>"; };
-		FEF024B0287FFAC3008C9CA4 /* NSObject+HHTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+HHTheme.h"; sourceTree = "<group>"; };
-		FEF024B3287FFAE3008C9CA4 /* UILabel+HHTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+HHTheme.h"; sourceTree = "<group>"; };
-		FEF024B4287FFAE3008C9CA4 /* UILabel+HHTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+HHTheme.m"; sourceTree = "<group>"; };
-		FEF024B628800182008C9CA4 /* HHThemePrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHThemePrivate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +72,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE067906288103EA0041E6F5 /* HHTheme */ = {
+			isa = PBXGroup;
+			children = (
+				FE06791A288103EA0041E6F5 /* HHTheme.h */,
+				FE067910288103EA0041E6F5 /* UIView+HHTheme.h */,
+				FE06791C288103EA0041E6F5 /* UIView+HHTheme.m */,
+				FE067915288103EA0041E6F5 /* UILabel+HHTheme.h */,
+				FE067907288103EA0041E6F5 /* UILabel+HHTheme.m */,
+				FE06790A288103EA0041E6F5 /* UIButton+HHTheme.h */,
+				FE067912288103EA0041E6F5 /* UIButton+HHTheme.m */,
+				FE067913288103EA0041E6F5 /* UIImageView+HHTheme.h */,
+				FE067909288103EA0041E6F5 /* UIImageView+HHTheme.m */,
+				FE067911288103EA0041E6F5 /* NSObject+HHTheme.h */,
+				FE06791B288103EA0041E6F5 /* NSObject+HHTheme.m */,
+				FE067914288103EA0041E6F5 /* CALayer+HHTheme.h */,
+				FE067908288103EA0041E6F5 /* CALayer+HHTheme.m */,
+				FE067916288103EA0041E6F5 /* HHThemeModel.h */,
+				FE06790B288103EA0041E6F5 /* HHThemeModel.m */,
+				FE06791D288103EA0041E6F5 /* HHThemeManager.h */,
+				FE06790F288103EA0041E6F5 /* HHThemeManager.m */,
+				FE067919288103EA0041E6F5 /* HHThemeDeallocObject.h */,
+				FE06790D288103EA0041E6F5 /* HHThemeDeallocObject.m */,
+				FE067917288103EA0041E6F5 /* HHThemeObserverView.h */,
+				FE06790E288103EA0041E6F5 /* HHThemeObserverView.m */,
+				FE06790C288103EA0041E6F5 /* HHThemeConstant.h */,
+				FE067918288103EA0041E6F5 /* HHThemePrivate.h */,
+			);
+			path = HHTheme;
+			sourceTree = SOURCE_ROOT;
+		};
 		FEF02479287FF84B008C9CA4 = {
 			isa = PBXGroup;
 			children = (
@@ -91,7 +121,7 @@
 		FEF02484287FF84B008C9CA4 /* HHThemeDemo */ = {
 			isa = PBXGroup;
 			children = (
-				FEF0249E287FF8F5008C9CA4 /* HHTheme */,
+				FE067906288103EA0041E6F5 /* HHTheme */,
 				FEF02485287FF84B008C9CA4 /* AppDelegate.h */,
 				FEF02486287FF84B008C9CA4 /* AppDelegate.m */,
 				FEF0248B287FF84B008C9CA4 /* ViewController.h */,
@@ -103,37 +133,6 @@
 				FEF02497287FF84D008C9CA4 /* main.m */,
 			);
 			path = HHThemeDemo;
-			sourceTree = "<group>";
-		};
-		FEF0249E287FF8F5008C9CA4 /* HHTheme */ = {
-			isa = PBXGroup;
-			children = (
-				FEF024AC287FF92F008C9CA4 /* HHTheme.h */,
-				FEF024A3287FF8F5008C9CA4 /* UIView+HHTheme.h */,
-				FEF024A6287FF8F5008C9CA4 /* UIView+HHTheme.m */,
-				FEF024B3287FFAE3008C9CA4 /* UILabel+HHTheme.h */,
-				FEF024B4287FFAE3008C9CA4 /* UILabel+HHTheme.m */,
-				FE0678FD288014200041E6F5 /* UIButton+HHTheme.h */,
-				FE0678FE288014200041E6F5 /* UIButton+HHTheme.m */,
-				FE0679002880142A0041E6F5 /* UIImageView+HHTheme.h */,
-				FE0679012880142A0041E6F5 /* UIImageView+HHTheme.m */,
-				FE067903288014380041E6F5 /* CALayer+HHTheme.h */,
-				FE067904288014380041E6F5 /* CALayer+HHTheme.m */,
-				FEF024A4287FF8F5008C9CA4 /* HHThemeModel.h */,
-				FEF0249F287FF8F5008C9CA4 /* HHThemeModel.m */,
-				FEF024B628800182008C9CA4 /* HHThemePrivate.h */,
-				FEF024A0287FF8F5008C9CA4 /* HHThemeConstant.h */,
-				FEF024A7287FF8F5008C9CA4 /* HHThemeManager.h */,
-				FEF024A2287FF8F5008C9CA4 /* HHThemeManager.m */,
-				FEF024A5287FF8F5008C9CA4 /* HHThemeObserverView.h */,
-				FEF024A1287FF8F5008C9CA4 /* HHThemeObserverView.m */,
-				FEF024AF287FFAC3008C9CA4 /* HHThemeDeallocObject.h */,
-				FEF024AE287FFAC3008C9CA4 /* HHThemeDeallocObject.m */,
-				FEF024B0287FFAC3008C9CA4 /* NSObject+HHTheme.h */,
-				FEF024AD287FFAC3008C9CA4 /* NSObject+HHTheme.m */,
-			);
-			name = HHTheme;
-			path = ../../HHTheme;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,19 +205,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEF024B2287FFAC4008C9CA4 /* HHThemeDeallocObject.m in Sources */,
-				FE067905288014380041E6F5 /* CALayer+HHTheme.m in Sources */,
-				FEF024A9287FF8F5008C9CA4 /* HHThemeObserverView.m in Sources */,
+				FE06791E288103EA0041E6F5 /* UILabel+HHTheme.m in Sources */,
+				FE067924288103EA0041E6F5 /* HHThemeManager.m in Sources */,
 				FEF0248D287FF84B008C9CA4 /* ViewController.m in Sources */,
-				FEF024AB287FF8F5008C9CA4 /* UIView+HHTheme.m in Sources */,
+				FE06791F288103EA0041E6F5 /* CALayer+HHTheme.m in Sources */,
 				FEF02487287FF84B008C9CA4 /* AppDelegate.m in Sources */,
-				FEF024AA287FF8F5008C9CA4 /* HHThemeManager.m in Sources */,
+				FE067921288103EA0041E6F5 /* HHThemeModel.m in Sources */,
+				FE067920288103EA0041E6F5 /* UIImageView+HHTheme.m in Sources */,
+				FE067926288103EA0041E6F5 /* NSObject+HHTheme.m in Sources */,
+				FE067923288103EA0041E6F5 /* HHThemeObserverView.m in Sources */,
+				FE067925288103EA0041E6F5 /* UIButton+HHTheme.m in Sources */,
+				FE067927288103EA0041E6F5 /* UIView+HHTheme.m in Sources */,
 				FEF02498287FF84D008C9CA4 /* main.m in Sources */,
-				FEF024A8287FF8F5008C9CA4 /* HHThemeModel.m in Sources */,
-				FE0678FF288014200041E6F5 /* UIButton+HHTheme.m in Sources */,
-				FEF024B1287FFAC4008C9CA4 /* NSObject+HHTheme.m in Sources */,
-				FE0679022880142A0041E6F5 /* UIImageView+HHTheme.m in Sources */,
-				FEF024B5287FFAE3008C9CA4 /* UILabel+HHTheme.m in Sources */,
+				FE067922288103EA0041E6F5 /* HHThemeDeallocObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
