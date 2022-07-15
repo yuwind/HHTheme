@@ -21,14 +21,11 @@
     
     self.view.theme_backgroundColors = @[UIColor.whiteColor, UIColor.darkTextColor];
     
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    UIButton *button = [self createButton];
     [self.view addSubview:button];
-    [button setTitle:@"Test Button" forState:UIControlStateNormal];
     button.theme_backgroundColors = @[UIColor.blackColor, UIColor.redColor];
     [button theme_setTitleColors:@[UIColor.whiteColor, UIColor.blackColor] forState:UIControlStateNormal];
-    [button sizeToFit];
-    button.center = CGPointMake(UIScreen.mainScreen.bounds.size.width / 2, UIScreen.mainScreen.bounds.size.height / 2);
-    [button addTarget:self action:@selector(buttonAction) forControlEvents:UIControlEventTouchUpInside];
+    
     if (HHThemeManager.themeStyle == HHThemeStyleDark) {
         _statusBarStyle = UIStatusBarStyleLightContent;
     } else {
@@ -46,12 +43,21 @@
     }];
 }
 
-- (void)buttonAction {
-    HHThemeManager.themeStyle = !HHThemeManager.themeStyle;
-}
-
 - (UIStatusBarStyle)preferredStatusBarStyle {
     return _statusBarStyle;
+}
+
+- (UIButton *)createButton {
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setTitle:@"Test Button" forState:UIControlStateNormal];
+    [button sizeToFit];
+    button.center = CGPointMake(UIScreen.mainScreen.bounds.size.width / 2, UIScreen.mainScreen.bounds.size.height / 2);
+    [button addTarget:self action:@selector(buttonAction) forControlEvents:UIControlEventTouchUpInside];
+    return button;
+}
+
+- (void)buttonAction {
+    HHThemeManager.themeStyle = !HHThemeManager.themeStyle;
 }
 
 @end
