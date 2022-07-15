@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 typedef void(^HHThemeModeBlock)(void);
 
 typedef NS_ENUM(NSUInteger, HHThemeStyle) {
+    HHThemeStyleSystem,
     HHThemeStyleLight,
     HHThemeStyleDark,
 };

@@ -12,15 +12,15 @@
 
 - (void)traitCollectionDidChange:(UITraitCollection *)previousTraitCollection {
     [super traitCollectionDidChange:previousTraitCollection];
-    if ([HHThemeManager shouldFollowSystem] == NO) {
+    if ([HHThemeManager themeStyle] != HHThemeStyleSystem) {
         return;
     }
     if (@available(iOS 13.0, *)) {
         if ([self.traitCollection hasDifferentColorAppearanceComparedToTraitCollection:previousTraitCollection]) {
             if (self.traitCollection.userInterfaceStyle == UIUserInterfaceStyleDark) {
-                [HHThemeManager setThemeStyle:HHThemeStyleDark];
+                [HHThemeManager updateInternalThemeStyle:HHThemeStyleDark];
             } else {
-                [HHThemeManager setThemeStyle:HHThemeStyleLight];
+                [HHThemeManager updateInternalThemeStyle:HHThemeStyleLight];
             }
         }
     }

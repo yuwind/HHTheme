@@ -13,11 +13,11 @@ NS_ASSUME_NONNULL_BEGIN
 @class HHThemeModel;
 @interface HHThemeManager : NSObject
 
-//theme style, default HHThemeStyleLight
+//theme style, above iOS 13 is HHThemeStyleSystem, below iOS 13 is HHThemeStyleLight
 @property (nonatomic, assign, class) HHThemeStyle themeStyle;
 
-//below iOS 13 are invalid, default true
-@property (nonatomic, assign, class) BOOL shouldFollowSystem;
+//update internal style when system mode changed, not need to call
++ (void)updateInternalThemeStyle:(HHThemeStyle)themeStyle;
 
 //store theme model
 + (void)storeThemeModel:(HHThemeModel *)themeModel;

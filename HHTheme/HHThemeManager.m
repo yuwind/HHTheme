@@ -15,7 +15,7 @@
 @interface HHThemeManager ()
 
 @property (nonatomic, assign) HHThemeStyle themeStyle;
-@property (nonatomic, assign) BOOL shouldFollowSystem;
+@property (nonatomic, assign) HHThemeStyle internalThemeStyle;
 @property (nonatomic, strong) NSMutableDictionary<NSString *, NSMutableArray<HHThemeModel *> *> *themeDictionaryM;
 @property (nonatomic, strong) HHThemeObserverView *observerView;
 
@@ -40,12 +40,8 @@
     [HHThemeManager manager].themeStyle = themeStyle;
 }
 
-+ (BOOL)shouldFollowSystem {
-    return [HHThemeManager manager].shouldFollowSystem;
-}
-
-+ (void)setShouldFollowSystem:(BOOL)shouldFollowSystem {
-    [HHThemeManager manager].shouldFollowSystem = shouldFollowSystem;
++ (void)updateInternalThemeStyle:(HHThemeStyle)themeStyle {
+    [HHThemeManager manager].internalThemeStyle = themeStyle;
 }
 
 + (void)storeThemeModel:(HHThemeModel *)themeModel {
@@ -59,14 +55,10 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
-        _shouldFollowSystem = YES;
-        _themeStyle = HHThemeStyleLight;
         if (@available(iOS 13.0, *)) {
-            if ([UITraitCollection currentTraitCollection].userInterfaceStyle == UIUserInterfaceStyleDark) {
-                _themeStyle = HHThemeStyleDark;
-            } else {
-                _themeStyle = HHThemeStyleLight;
-            }
+            self.themeStyle = HHThemeStyleSystem;
+        } else {
+            self.themeStyle = HHThemeStyleLight;
         }
         _observerView = [[HHThemeObserverView alloc] initWithFrame:CGRectMake(0, 0, 0.02, 0.02)];
         __block UIWindow *window = nil;
@@ -124,10 +116,27 @@
 }
 
 - (void)setThemeStyle:(HHThemeStyle)themeStyle {
-    if (_themeStyle == themeStyle) {
+    _themeStyle = themeStyle;
+    if (_themeStyle == HHThemeStyleSystem) {
+        if (@available(iOS 13.0, *)) {
+            if ([UITraitCollection currentTraitCollection].userInterfaceStyle == UIUserInterfaceStyleDark) {
+                self.internalThemeStyle = HHThemeStyleDark;
+            } else {
+                self.internalThemeStyle = HHThemeStyleLight;
+            }
+        } else {
+            self.internalThemeStyle = HHThemeStyleLight;
+        }
+    } else {
+        self.internalThemeStyle = themeStyle;
+    }
+}
+
+- (void)setInternalThemeStyle:(HHThemeStyle)internalThemeStyle {
+    if (_internalThemeStyle == internalThemeStyle) {
         return;
     }
-    _themeStyle = themeStyle;
+    _internalThemeStyle = internalThemeStyle;
     NSMutableArray *expiredArray = @[].mutableCopy;
     for (NSString *objectKey in self.themeDictionaryM.allKeys) {
         NSMutableArray<HHThemeModel *> *modelArrayM = [self.themeDictionaryM objectForKey:objectKey];
@@ -139,13 +148,14 @@
             }
         }];
     }
+    //clear invalid objects
     for (NSString *objectKey in expiredArray) {
         [self removeThemeModelsWithObjectKey:objectKey];
     }
 }
 
 - (void)invokeThemeModel:(HHThemeModel *)themeModel {
-    if (self.themeStyle == HHThemeStyleLight) {
+    if (self.internalThemeStyle == HHThemeStyleLight) {
         if (themeModel.lightMode) {
             themeModel.lightMode();
         }
