@@ -12,3 +12,4 @@
 #import "UIButton+HHTheme.h"
 #import "UIImageView+HHTheme.h"
 #import "CALayer+HHTheme.h"
+#import "CAShapeLayer+HHTheme.h"

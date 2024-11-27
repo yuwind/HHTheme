@@ -12,7 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSObject (HHTheme)
 
-//watch out for circular references
+//call when appearance changed, watch out for circular references
+- (void)theme_changedBlock:(nullable HHThemeModeBlock)changeBlock;
+
+//call when appearance changed, watch out for circular references
 - (void)theme_lightMode:(nullable HHThemeModeBlock)lightMode darkMode:(nullable HHThemeModeBlock)darkMode;
 
 //called when the object is destroyed

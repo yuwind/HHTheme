@@ -18,12 +18,12 @@
         self.backgroundColor = theme_backgroundColors.firstObject.CGColor;
         return;
     }
-    @weakify(self);
+    @themeWeak(self);
     [self theme_lightMode:^{
-        @strongify(self);
+        @themeStrong(self);
         self.backgroundColor = theme_backgroundColors.firstObject.CGColor;
     } darkMode:^{
-        @strongify(self);
+        @themeStrong(self);
         self.backgroundColor = theme_backgroundColors.lastObject.CGColor;
     }];
 }

@@ -12,10 +12,10 @@
 
 - (void)traitCollectionDidChange:(UITraitCollection *)previousTraitCollection {
     [super traitCollectionDidChange:previousTraitCollection];
-    if ([HHThemeManager themeStyle] != HHThemeStyleSystem) {
-        return;
-    }
     if (@available(iOS 13.0, *)) {
+        if ([HHThemeManager themeStyle] != HHThemeStyleSystem) {
+            return;
+        }
         if ([self.traitCollection hasDifferentColorAppearanceComparedToTraitCollection:previousTraitCollection]) {
             if (self.traitCollection.userInterfaceStyle == UIUserInterfaceStyleDark) {
                 [HHThemeManager updateInternalThemeStyle:HHThemeStyleDark];
@@ -25,4 +25,5 @@
         }
     }
 }
+
 @end

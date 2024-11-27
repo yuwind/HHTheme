@@ -19,12 +19,12 @@
         self.backgroundColor = theme_backgroundColors.firstObject;
         return;
     }
-    @weakify(self);
+    @themeWeak(self);
     [self theme_lightMode:^{
-        @strongify(self);
+        @themeStrong(self);
         self.backgroundColor = theme_backgroundColors.firstObject;
     } darkMode:^{
-        @strongify(self);
+        @themeStrong(self);
         self.backgroundColor = theme_backgroundColors.lastObject;
     }];
 }
@@ -34,12 +34,12 @@
         self.tintColor = themeColors.firstObject;
         return;
     }
-    @weakify(self);
+    @themeWeak(self);
     [self theme_lightMode:^{
-        @strongify(self);
+        @themeStrong(self);
         self.tintColor = themeColors.firstObject;
     } darkMode:^{
-        @strongify(self);
+        @themeStrong(self);
         self.tintColor = themeColors.lastObject;
     }];
 }

@@ -13,9 +13,18 @@
 
 @implementation NSObject (HHTheme)
 
+- (void)theme_changedBlock:(nullable HHThemeModeBlock)changeBlock {
+    if (@available(iOS 13.0, *)) {
+        HHThemeModel *model = [HHThemeModel modelWithThemeObject:self lightMode:changeBlock darkMode:changeBlock];
+        [HHThemeManager storeThemeModel:model];
+    }
+}
+
 - (void)theme_lightMode:(HHThemeModeBlock)lightMode darkMode:(HHThemeModeBlock)darkMode {
-    HHThemeModel *model = [HHThemeModel modelWithThemeObject:self lightMode:lightMode darkMode:darkMode];
-    [HHThemeManager storeThemeModel:model];
+    if (@available(iOS 13.0, *)) {
+        HHThemeModel *model = [HHThemeModel modelWithThemeObject:self lightMode:lightMode darkMode:darkMode];
+        [HHThemeManager storeThemeModel:model];
+    }
 }
 
 - (void)theme_afterDeallocCallBack:(void(^ _Nullable)(void))callBack {

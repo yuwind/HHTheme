@@ -33,7 +33,7 @@ static inline void theme_performActionOnBackgroundThread(ThemeActionBlock action
     });
 }
 
-#define mThemeObjectAddress(object) [NSString stringWithFormat:@"%p",object]
+#define mThemeObjectAddress(object) [NSString stringWithFormat:@"theme_%p",object]
 
 #define mThemeAvailableWindow ({UIWindow *window = nil;\
 if ([UIApplication.sharedApplication.delegate respondsToSelector:@selector(window)]) {\
@@ -45,12 +45,12 @@ if (window == nil) {\
 window;})
 
 #if DEBUG
-#define hh_keywordify autoreleasepool {}
+#define theme_keywordify autoreleasepool {}
 #else
-#define hh_keywordify try {} @catch (...) {}
+#define theme_keywordify try {} @catch (...) {}
 #endif
 
-#define weakify(var) hh_keywordify __weak __typeof(var) __weak__##var = var;
-#define strongify(var) hh_keywordify __strong typeof(var) var = __weak__##var;
+#define themeWeak(var) theme_keywordify __weak __typeof(var) __weak__##var = var;
+#define themeStrong(var) theme_keywordify __strong typeof(var) var = __weak__##var;
 
 NS_ASSUME_NONNULL_END

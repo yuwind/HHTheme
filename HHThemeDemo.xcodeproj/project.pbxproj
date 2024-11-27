@@ -17,6 +17,7 @@
 		FE067925288103EA0041E6F5 /* UIButton+HHTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = FE067912288103EA0041E6F5 /* UIButton+HHTheme.m */; };
 		FE067926288103EA0041E6F5 /* NSObject+HHTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = FE06791B288103EA0041E6F5 /* NSObject+HHTheme.m */; };
 		FE067927288103EA0041E6F5 /* UIView+HHTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = FE06791C288103EA0041E6F5 /* UIView+HHTheme.m */; };
+		FE8345BA2CEDFCA400E4D9A8 /* CAShapeLayer+HHTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8345B92CEDFCA400E4D9A8 /* CAShapeLayer+HHTheme.m */; };
 		FEF02487287FF84B008C9CA4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF02486287FF84B008C9CA4 /* AppDelegate.m */; };
 		FEF0248D287FF84B008C9CA4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF0248C287FF84B008C9CA4 /* ViewController.m */; };
 		FEF02490287FF84B008C9CA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEF0248E287FF84B008C9CA4 /* Main.storyboard */; };
@@ -49,6 +50,8 @@
 		FE06791B288103EA0041E6F5 /* NSObject+HHTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HHTheme.m"; sourceTree = "<group>"; };
 		FE06791C288103EA0041E6F5 /* UIView+HHTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HHTheme.m"; sourceTree = "<group>"; };
 		FE06791D288103EA0041E6F5 /* HHThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHThemeManager.h; sourceTree = "<group>"; };
+		FE8345B82CEDFCA400E4D9A8 /* CAShapeLayer+HHTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CAShapeLayer+HHTheme.h"; sourceTree = "<group>"; };
+		FE8345B92CEDFCA400E4D9A8 /* CAShapeLayer+HHTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CAShapeLayer+HHTheme.m"; sourceTree = "<group>"; };
 		FEF02482287FF84B008C9CA4 /* HHThemeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HHThemeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEF02485287FF84B008C9CA4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FEF02486287FF84B008C9CA4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -88,6 +91,8 @@
 				FE06791B288103EA0041E6F5 /* NSObject+HHTheme.m */,
 				FE067914288103EA0041E6F5 /* CALayer+HHTheme.h */,
 				FE067908288103EA0041E6F5 /* CALayer+HHTheme.m */,
+				FE8345B82CEDFCA400E4D9A8 /* CAShapeLayer+HHTheme.h */,
+				FE8345B92CEDFCA400E4D9A8 /* CAShapeLayer+HHTheme.m */,
 				FE067916288103EA0041E6F5 /* HHThemeModel.h */,
 				FE06790B288103EA0041E6F5 /* HHThemeModel.m */,
 				FE06791D288103EA0041E6F5 /* HHThemeManager.h */,
@@ -214,6 +219,7 @@
 				FE067920288103EA0041E6F5 /* UIImageView+HHTheme.m in Sources */,
 				FE067926288103EA0041E6F5 /* NSObject+HHTheme.m in Sources */,
 				FE067923288103EA0041E6F5 /* HHThemeObserverView.m in Sources */,
+				FE8345BA2CEDFCA400E4D9A8 /* CAShapeLayer+HHTheme.m in Sources */,
 				FE067925288103EA0041E6F5 /* UIButton+HHTheme.m in Sources */,
 				FE067927288103EA0041E6F5 /* UIView+HHTheme.m in Sources */,
 				FEF02498287FF84D008C9CA4 /* main.m in Sources */,
@@ -368,7 +374,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -399,7 +405,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

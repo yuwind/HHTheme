@@ -19,12 +19,12 @@
         self.image = theme_images.firstObject;
         return;
     }
-    @weakify(self);
+    @themeWeak(self);
     [self theme_lightMode:^{
-        @strongify(self);
+        @themeStrong(self);
         self.image = theme_images.firstObject;
     } darkMode:^{
-        @strongify(self);
+        @themeStrong(self);
         self.image = theme_images.lastObject;
     }];
 }

@@ -16,12 +16,12 @@
         [self setTitleColor:colors.firstObject forState:state];
         return;
     }
-    @weakify(self);
+    @themeWeak(self);
     [self theme_lightMode:^{
-        @strongify(self);
+        @themeStrong(self);
         [self setTitleColor:colors.firstObject forState:state];
     } darkMode:^{
-        @strongify(self);
+        @themeStrong(self);
         [self setTitleColor:colors.lastObject forState:state];
     }];
 }
@@ -42,12 +42,12 @@
         [self setImage:images.firstObject forState:state];
         return;
     }
-    @weakify(self);
+    @themeWeak(self);
     [self theme_lightMode:^{
-        @strongify(self);
+        @themeStrong(self);
         [self setImage:images.firstObject forState:state];
     } darkMode:^{
-        @strongify(self);
+        @themeStrong(self);
         [self setImage:images.lastObject forState:state];
     }];
 }
@@ -68,12 +68,12 @@
         [self setBackgroundImage:images.firstObject forState:state];
         return;
     }
-    @weakify(self);
+    @themeWeak(self);
     [self theme_lightMode:^{
-        @strongify(self);
+        @themeStrong(self);
         [self setBackgroundImage:images.firstObject forState:state];
     } darkMode:^{
-        @strongify(self);
+        @themeStrong(self);
         [self setBackgroundImage:images.lastObject forState:state];
     }];
 }

@@ -18,12 +18,12 @@
         self.textColor = theme_textColors.firstObject;
         return;
     }
-    @weakify(self);
+    @themeWeak(self);
     [self theme_lightMode:^{
-        @strongify(self);
+        @themeStrong(self);
         self.textColor = theme_textColors.firstObject;
     } darkMode:^{
-        @strongify(self);
+        @themeStrong(self);
         self.textColor = theme_textColors.lastObject;
     }];
 }
