@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = 'HHTheme' 
-  s.version      = '1.1.0'
+  s.version      = '1.1.1'
   s.summary      = 'HHTheme'
   s.description  = 'Automatically manage theme'
   s.homepage     = 'https://github.com/yuwind/HHTheme/wiki'

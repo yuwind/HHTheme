@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 //write only
 @property (nonatomic, copy) NSArray<UIColor *> *theme_backgroundColors;
+@property (nonatomic, copy) NSArray<UIColor *> *theme_borderColors;
+@property (nonatomic, copy) NSArray<UIColor *> *theme_shadowColors;
 
 @end
 

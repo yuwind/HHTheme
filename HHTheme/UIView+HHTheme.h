@@ -18,6 +18,9 @@ NS_ASSUME_NONNULL_BEGIN
 //write only
 @property (nonatomic, copy) NSArray<UIColor *> *theme_tintColors;
 
+//write only
+@property (nonatomic, copy) NSArray<NSNumber *> *theme_alphas;
+
 @end
 
 NS_ASSUME_NONNULL_END

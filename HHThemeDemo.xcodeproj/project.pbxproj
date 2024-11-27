@@ -18,6 +18,7 @@
 		FE067926288103EA0041E6F5 /* NSObject+HHTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = FE06791B288103EA0041E6F5 /* NSObject+HHTheme.m */; };
 		FE067927288103EA0041E6F5 /* UIView+HHTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = FE06791C288103EA0041E6F5 /* UIView+HHTheme.m */; };
 		FE8345BA2CEDFCA400E4D9A8 /* CAShapeLayer+HHTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8345B92CEDFCA400E4D9A8 /* CAShapeLayer+HHTheme.m */; };
+		FEE28FB72CF71AE9005C058A /* UISwitch+HHTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE28FB62CF71AE9005C058A /* UISwitch+HHTheme.m */; };
 		FEF02487287FF84B008C9CA4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF02486287FF84B008C9CA4 /* AppDelegate.m */; };
 		FEF0248D287FF84B008C9CA4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF0248C287FF84B008C9CA4 /* ViewController.m */; };
 		FEF02490287FF84B008C9CA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEF0248E287FF84B008C9CA4 /* Main.storyboard */; };
@@ -52,6 +53,8 @@
 		FE06791D288103EA0041E6F5 /* HHThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHThemeManager.h; sourceTree = "<group>"; };
 		FE8345B82CEDFCA400E4D9A8 /* CAShapeLayer+HHTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CAShapeLayer+HHTheme.h"; sourceTree = "<group>"; };
 		FE8345B92CEDFCA400E4D9A8 /* CAShapeLayer+HHTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CAShapeLayer+HHTheme.m"; sourceTree = "<group>"; };
+		FEE28FB52CF71AE9005C058A /* UISwitch+HHTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UISwitch+HHTheme.h"; sourceTree = "<group>"; };
+		FEE28FB62CF71AE9005C058A /* UISwitch+HHTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UISwitch+HHTheme.m"; sourceTree = "<group>"; };
 		FEF02482287FF84B008C9CA4 /* HHThemeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HHThemeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEF02485287FF84B008C9CA4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FEF02486287FF84B008C9CA4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -85,6 +88,8 @@
 				FE067907288103EA0041E6F5 /* UILabel+HHTheme.m */,
 				FE06790A288103EA0041E6F5 /* UIButton+HHTheme.h */,
 				FE067912288103EA0041E6F5 /* UIButton+HHTheme.m */,
+				FEE28FB52CF71AE9005C058A /* UISwitch+HHTheme.h */,
+				FEE28FB62CF71AE9005C058A /* UISwitch+HHTheme.m */,
 				FE067913288103EA0041E6F5 /* UIImageView+HHTheme.h */,
 				FE067909288103EA0041E6F5 /* UIImageView+HHTheme.m */,
 				FE067911288103EA0041E6F5 /* NSObject+HHTheme.h */,
@@ -220,6 +225,7 @@
 				FE067926288103EA0041E6F5 /* NSObject+HHTheme.m in Sources */,
 				FE067923288103EA0041E6F5 /* HHThemeObserverView.m in Sources */,
 				FE8345BA2CEDFCA400E4D9A8 /* CAShapeLayer+HHTheme.m in Sources */,
+				FEE28FB72CF71AE9005C058A /* UISwitch+HHTheme.m in Sources */,
 				FE067925288103EA0041E6F5 /* UIButton+HHTheme.m in Sources */,
 				FE067927288103EA0041E6F5 /* UIView+HHTheme.m in Sources */,
 				FEF02498287FF84D008C9CA4 /* main.m in Sources */,

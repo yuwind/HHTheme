@@ -13,8 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface CAShapeLayer (HHTheme)
 
 //write only
-@property (nonatomic, copy) NSArray<UIColor *> *theme_strokeColors;
 @property (nonatomic, copy) NSArray<UIColor *> *theme_fillColors;
+@property (nonatomic, copy) NSArray<UIColor *> *theme_strokeColors;
 
 @end
 

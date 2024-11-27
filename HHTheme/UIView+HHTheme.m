@@ -13,6 +13,7 @@
 
 @dynamic theme_backgroundColors;
 @dynamic theme_tintColors;
+@dynamic theme_alphas;
 
 - (void)setTheme_backgroundColors:(NSArray<UIColor *> *)theme_backgroundColors {
     if (theme_backgroundColors.count != 2) {
@@ -41,6 +42,21 @@
     } darkMode:^{
         @themeStrong(self);
         self.tintColor = themeColors.lastObject;
+    }];
+}
+
+- (void)setTheme_alphas:(NSArray<NSNumber *> *)theme_alphas {
+    if (theme_alphas.count != 2) {
+        self.alpha = theme_alphas.firstObject.floatValue;
+        return;
+    }
+    @themeWeak(self);
+    [self theme_lightMode:^{
+        @themeStrong(self);
+        self.alpha = theme_alphas.firstObject.floatValue;
+    } darkMode:^{
+        @themeStrong(self);
+        self.alpha = theme_alphas.lastObject.floatValue;
     }];
 }
 
